@@ -4,20 +4,21 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Friend />
-      <Friend />
-      <Friend />
-      <Friend />
-      <Friend />
+      <Friend name="Abul" phone="0147845" address="Dhaka"></Friend>
+      <Friend name="Babul" phone="01478557" address="Khulna"></Friend>
+      <Friend name="Dabul" phone="01478000" address="Borisal"></Friend>
+      <Friend name="Sabul" phone="014780111" address="Bandorbon"></Friend>
     </div>
   );
 }
 
-function Friend() {
+function Friend(props) {
+  const { name, phone, address } = props;
   return (
     <div className='friend'>
-      <h1>Name: Salim Uddin</h1>
-      <h3>Phone: 01455794784</h3>
+      <h1>Name: {name} </h1>
+      <h3>Address: {address} </h3>
+      <h3>Phone: {phone} </h3>
     </div>
   )
 }
