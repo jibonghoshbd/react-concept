@@ -32,7 +32,16 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.friend {
+  background-color: goldenrod;
+  margin: 1.5rem;
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-transform: uppercase;
 }
